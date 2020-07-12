@@ -1,0 +1,19 @@
+$HOME/.config/coc/extensions/
+###################
+.DS_Store
+.hg
+.svn
+.vscode
+*.vscode
+node_modules
+###################
+# Python files
+.venv/
+.pyc
+# Temporary files
+*.kate-swp
+*.swp
+*.swo
+*~
+
+
