@@ -3,6 +3,7 @@ $HOME/.config/coc/extensions/
 .DS_Store
 .hg
 .svn
+.idea
 .vscode
 *.vscode
 node_modules
