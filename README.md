@@ -95,6 +95,7 @@ base 'default'.
 上述問題可先清空 PostgreSQL Volume 後，再重建。
 
 ```
+# 確認 docker-compose 已重新啟動
 $ docker-compose up -d --build
 ⋯⋯
 $ docker-compose ps
@@ -103,7 +104,8 @@ $ docker-compose ps
 ex2020-001_db_1    docker-entrypoint.sh postgres    Up      5432/tcp
 ex2020-001_web_1   python /code/manage.py run ...   Up      0.0.0.0:8000->8000/tcp
 
-docker-compose exec web python manage.py migrate
+# 要求 PostgreSQL 重建「資料庫」
+$ docker-compose exec web python manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions, users
 Running migrations:
